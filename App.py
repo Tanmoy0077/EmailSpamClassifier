@@ -4,6 +4,7 @@ from nltk.stem.porter import PorterStemmer
 import streamlit as st
 import pickle
 
+nltk.download('punkt')
 ps = PorterStemmer()
 
 tfidf = pickle.load(open("vectorizer.pkl", "rb"))
