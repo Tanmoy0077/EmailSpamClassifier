@@ -5,6 +5,7 @@ import streamlit as st
 import pickle
 
 nltk.download('punkt')
+nltk.download('stopwords')
 ps = PorterStemmer()
 
 tfidf = pickle.load(open("vectorizer.pkl", "rb"))
